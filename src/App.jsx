@@ -309,7 +309,7 @@ export default function App() {
     if (!reportText.trim()) return;
     const subject = encodeURIComponent("Easyonary Bug Report");
     const body = encodeURIComponent(`Word searched: ${query || result?.word || "N/A"}\n\nProblem:\n${reportText}`);
-    window.open(`mailto:YOUR_EMAIL_HERE?subject=${subject}&body=${body}`);
+    window.open(`mailto:fakhruddin.akmal2013@proton.me?subject=${subject}&body=${body}`);
     setReportSent(true);
     setTimeout(() => { setShowReport(false); setReportSent(false); setReportText(""); }, 2000);
   };
